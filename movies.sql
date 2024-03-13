@@ -396,3 +396,17 @@ VALUES
   (60, 50),
   (65, 50);
 
+\```sql
+SELECT title FROM movies;
+\```
+
+\```sql
+SELECT * FROM movies WHERE rating LIKE '%G';
+\```
+
+\```sql
+SELECT title, release_year FROM movies ORDER BY release_year ASC;
+\```
+
+-- All information on the 5 longest movies.--
+SELECT * FROM movies ORDER BY runtime DESC LIMIT 5;
