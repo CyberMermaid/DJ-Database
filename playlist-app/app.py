@@ -123,7 +123,7 @@ def add_song():
         title = form.title.data
         artist = form.artist.data
         # Add song
-        new_song = Playlist(title=title,artist=artist)
+        new_song = Song(title=title,artist=artist)
         # Add new object to session
         db.session.add(new_song)
         # Commit
